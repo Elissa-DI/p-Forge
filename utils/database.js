@@ -20,6 +20,6 @@ export const connectToDB = async () => {
         isConnected = true;
         console.log("Mongo is connected😁");
     } catch (error) {
-        
+        console.log(error);
     }
 }
