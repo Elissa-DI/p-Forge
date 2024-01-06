@@ -8,7 +8,13 @@ import { usePathname, useRouter } from "next/navigation";
 import { FaCheck, FaCopy } from 'react-icons/fa6'
 
 const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
-  const [copied, setCopied] = useState("")
+  const [copied, setCopied] = useState("");
+
+  const handleCopy = () => {
+    setCopied(post.prompt);
+    navigator.clipboard.writeText(post.prompt);
+    setTimeout(() => setCopied(""), 3000);
+  }
   return (
     <div className="prompt_card">
       <div className="flex justify-between items-start gap-5">
@@ -34,7 +40,8 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
           </div>
         </div>
 
-        <div className="copy_btn" onClick={() => { }}>
+        <div className="copy_btn"
+         onClick={handleCopy}>
           <Image
             src={copied === post.prompt
               ? '/assets/icons/tick.svg'
