@@ -50,7 +50,7 @@ const Nav = () => {
                 src={session?.user.image}
                 width={37}
                 height={37}
-                className='rounded-full'
+                className='rounded-full cursor-pointer'
                 alt='profile'
               />
             </Link>
@@ -82,7 +82,7 @@ const Nav = () => {
               src={session?.user.image}
               width={37}
               height={37}
-              className='rounded-full'
+              className='rounded-full cursor-pointer'
               alt='profile'
               onClick={() => setToggleDropdown(!toggleDropdown)}
             />

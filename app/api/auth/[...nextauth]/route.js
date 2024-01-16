@@ -3,18 +3,18 @@ import GoogleProvider from 'next-auth/providers/google';
 
 import User from '@models/user';
 import { connectToDB } from '@utils/database';
-import Profile from '@components/Profile';
 
-console.log({
-  clientId: process.env.GOOGLE_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-});
+// console.log({
+//   clientId: process.env.GOOGLE_ID,
+//   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+//   mongoDB: process.env.MONGODB_URI
+// });
 
 const handler = NextAuth({
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET
     })
   ],
   callbacks: {
@@ -24,11 +24,11 @@ const handler = NextAuth({
 
       return session;
     },
-    async signIn([profile]) {
+    async signIn({profile}) {
       try {
         await connectToDB();
         //Check if a user exists
-        const UserExists = await User.findOne({
+        const userExists = await User.findOne({
           email: profile.email
         })
 
@@ -37,17 +37,18 @@ const handler = NextAuth({
           await User.create({
             email: profile.email,
             username: profile.name.replace(" ", "").toLowerCase(),
-            image: profile.picture,
+            image: profile.picturee,
           });
         }
 
         return true;
       } catch (error) {
-        console.log(error);
+        console.error("Error during signin", error);
+        // console.log("Error while checking if the user exists", error.message);
         return false;
       }
 
-    }
+    },
   }
 })
 

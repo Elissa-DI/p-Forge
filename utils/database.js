@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 let isConnected = false;//Track the connection
 
 export const connectToDB = async () => {
+    console.log("Attempting to connect to MongoDB...");
     mongoose.set('strictQuery', true);
 
     if(isConnected) {
@@ -18,8 +19,9 @@ export const connectToDB = async () => {
         })
 
         isConnected = true;
-        console.log("Mongo is connected😁");
+        console.log("Mongodb is connected😁");
     } catch (error) {
+        console.log("Mongodb is not connected😒");
         console.log(error);
     }
 }
