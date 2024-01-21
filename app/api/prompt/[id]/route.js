@@ -42,7 +42,7 @@ export const PATCH = async (request, { params }) => {
 
 export const DELETE = async (request, { params }) => {
     try {
-        await connectToDB();
+        await connectToDB(); 
 
         // Find the prompt by ID and remove it
         await Prompt.findByIdAndRemove(params.id);

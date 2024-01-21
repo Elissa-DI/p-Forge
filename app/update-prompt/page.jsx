@@ -27,11 +27,11 @@ const EditPrompt = () => {
     if (promptId) getPromptDetails();
   }, [promptId]);
 
-  const EditPrompt = async (e) => {
+  const updatePrompt = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    if (!promptId) return alert("Missing PromptId!");
+    if (!promptId) return alert("Missing PromptId!🤔");
 
     try {
       const response = await fetch(`/api/prompt/${promptId}`, {
