@@ -38,6 +38,10 @@ Also I had ensured responsiveness
 
 ![Screenshot 2024-01-21 215615](https://github.com/Elissa-DI/p-Forge/assets/122690968/a6cb5377-45d2-48a3-82f0-748d6d0b304a)
 
+![Screenshot 2024-01-21 215520](https://github.com/Elissa-DI/p-Forge/assets/122690968/60b355ee-04be-49cf-a0fb-de9f8cb622b6)
+
+
+
 
 
 
