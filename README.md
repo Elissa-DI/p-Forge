@@ -1,4 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a fullstack website made usingmodern app router by fetching APIs and using tailwind
+![Screenshot 2024-01-21 215501](https://github.com/Elissa-DI/p-Forge/assets/122690968/81361995-bb55-49ac-b295-9cc0ecae829b)
 
 ## Getting Started
 
@@ -18,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font with also optimized Images.
 
 ## Learn More
 
@@ -29,8 +31,14 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Also I had ensured responsiveness
+![Screenshot 2024-01-21 215724](https://github.com/Elissa-DI/p-Forge/assets/122690968/d3c2e635-c94d-4bcb-8d88-13a09e55a7e8)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+![Screenshot 2024-01-21 215615](https://github.com/Elissa-DI/p-Forge/assets/122690968/a6cb5377-45d2-48a3-82f0-748d6d0b304a)
+
+
+
+
+
